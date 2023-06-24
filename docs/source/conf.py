@@ -1,10 +1,6 @@
-# Configuration file for the Sphinx documentation builder.
-#
-# For the full list of built-in configuration values, see the documentation:
-# https://www.sphinx-doc.org/en/master/usage/configuration.html
-
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+
 from pathlib import Path
 
 project = "honestdid"
@@ -26,6 +22,7 @@ extensions = [
 ]
 autoapi_type = "python"
 autoapi_dirs = [f"{Path(__file__).parents[2]}/honestdid"]
+
 templates_path = ["_templates"]
 exclude_patterns = []
 
