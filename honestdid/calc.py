@@ -1,5 +1,5 @@
 import math
-from typing import Type, Union
+from typing import Union
 
 
 def square(x: Union[int, float]) -> Union[int, float]:
@@ -30,6 +30,6 @@ def square(x: Union[int, float]) -> Union[int, float]:
             f"x should be of type int or float but is of: {type(x)}"
         )
     elif math.isnan(x):
-        raise ValueError(f"x cannot be nan")
+        raise ValueError("x cannot be nan")
     else:
         return x * x
